@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes titleAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-titleAnimation {
+  @apply animate-[titleAnimation_7s_ease-in-out];
+}
+
+
+a.active hr{
+  display: block;
+}
